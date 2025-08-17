@@ -42,7 +42,6 @@ class UserService {
 }
 
 
-
     createToken(user) {
     try {
         const result = jwt.sign(user, JWT_KEY, {expiresIn: '1d'});
